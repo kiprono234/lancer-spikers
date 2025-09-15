@@ -1,0 +1,53 @@
+.hero {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__logo-banner {
+      width: 320px;
+      height: 220px;
+      margin-bottom: 1.5rem;
+  
+      @media (max-width: 700px) {
+        width: 180px;
+        height: 120px;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    &__logo-img {
+      width: 100%;
+      height: auto;
+      max-width: 320px;
+      max-height: 220px;
+      object-fit: contain;
+  
+      @media (max-width: 700px) {
+        max-width: 160px;
+        max-height: 120px;
+      }
+    }
+  
+    &__content {
+      text-align: center;
+      h1 {
+        font-size: 2.2rem;
+        margin: 1rem 0 0.5rem 0;
+  
+        @media (max-width: 700px) {
+          font-size: 1.3rem;
+          margin-top: 0.5rem;
+        }
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1.7rem;
+  
+        @media (max-width: 700px) {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
